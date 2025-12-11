@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box exercise 2.</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: auto;
+            height: 600px;
+            position: relative;
+            border: 1px solid #000;
+        }
+
+        .box {
+            width: 100px;
+            height: 150px;
+            background-color: #eeeff2;
+            border-left: 10px dotted #D0D0FF;
+        }
+
+        .box:hover {
+            background-color: yellow;
+            color: goldenrod;
+        }
+
+        .align {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 10px;
+        }
+
+        .font {
+            font-family: Tahoma, sans-serif;
+            font-size: 40px;
+        }
+
+        span {
+            line-height: 2;
+            padding: 10px;
+            display: block;
+        }
+
+        .fixed-bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="align">
+            <div class="box font"> <span>A</span> </div>
+            <div class="box font"> <span>B</span> </div>
+            <div class="box font"> <span>C</span> </div>
+            <div class="box font"> <span>D</span> </div>
+            <div class="box font"> <span>E</span> </div>
+        </div>
+        <div class="box font fixed-bottom-right"> <span>F</span> </div>
+    </div>
+
+</body>
+</html>
